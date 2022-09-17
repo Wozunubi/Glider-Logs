@@ -1,7 +1,7 @@
 exports.home = (req, res) => {
-    res.send("Test");
+    res.render("index");
 }
 
-exports.hi = (req, res) => {
-    res.send("Hello :)");
+exports.users = (req, res) => {
+    res.render("users");
 }

@@ -4,6 +4,6 @@ const services = require("../services/render");
 const route = express.Router();
 
 route.get('/', services.home);
-route.get('/hi', services.hi);
+route.get('/users', services.users);
 
 module.exports = route
