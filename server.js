@@ -19,5 +19,5 @@ app.use('/js', express.static(path.resolve(__dirname, "assets/js")));
 app.set("view engine", "ejs")
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`)
+    console.log(`Server is running on http://localhost:${PORT}/home`)
 });
