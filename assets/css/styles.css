@@ -16,12 +16,17 @@ nav ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    padding: 20px;
+    padding: 1.2em;
 }
 
 nav ul li a {
     font-size: 1.5em;
     color: white;
+}
+
+table thead tr th {
+    margin: auto;
+    font-size: 1.2em;
 }
 
 .container {
