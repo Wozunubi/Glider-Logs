@@ -24,9 +24,16 @@ nav ul li a {
     color: white;
 }
 
-table thead tr th {
-    margin: auto;
+table {
+    width: 100%;
+    border-spacing: 0px;
+    padding: 10px;
+}
+
+tr th {
     font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid;
 }
 
 .container {
@@ -36,6 +43,10 @@ table thead tr th {
 
 .text-center {
     text-align: center;
+}
+
+.btn {
+    
 }
 
 .border-shadow {
