@@ -4,12 +4,17 @@ const morgan = require("morgan");
 const path = require('path');
 const {dirname} = require('path');
 
+const connectMongo = require('./server/database/connection');
+
 const app = express();
 
 dotenv.config({path:'config.env'});
 const PORT = process.env.PORT || 8080;
 
 app.use(morgan("tiny"));
+
+connectMongo();
+
 app.use('/', require('./server/routes/router'));
 
 app.use('/css', express.static(path.resolve(__dirname, "assets/css")));
