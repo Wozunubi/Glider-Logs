@@ -5,6 +5,6 @@ const route = express.Router();
 
 route.get('/home', services.home);
 route.get('/logs', services.logs)
-route.get('/users', services.users);
+route.get('/settings', services.settings);
 
 module.exports = route

@@ -6,6 +6,6 @@ exports.logs = (req, res) => {
     res.render("logs");
 }
 
-exports.users = (req, res) => {
-    res.render("users");
+exports.settings = (req, res) => {
+    res.render("settings");
 }
