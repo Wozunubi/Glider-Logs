@@ -31,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/Wozunubi/Glider-Logs/issues"
   },
-  "homepage": "https://github.com/Wozunubi/Glider-Logs#readme"
+  "homepage": "https://github.com/Wozunubi/Glider-Logs#readme",
+  "devDependencies": {}
 }
