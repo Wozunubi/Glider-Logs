@@ -2,8 +2,8 @@ exports.home = (req, res) => {
     res.render("index");
 }
 
-exports.logs = (req, res) => {
-    res.render("logs");
+exports.stats = (req, res) => {
+    res.render("stats");
 }
 
 exports.settings = (req, res) => {
