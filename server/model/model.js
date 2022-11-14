@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
-var structure = new mongoose.Schema({
-    type: {type: String, required: true},
-    registration: {type: String, required: true, unique},
+var schema = new mongoose.Schema({
+    make: {type: String, required: true},
+    registration: {type: String, required: true, unique: true},
     pic: {type: String, required: true},
     pax: {type: String, required: false},
     time: {type: String, required: true}
-})
+});
 
-const logs = mongoose.model('logs', schema);
+const logsdb = mongoose.model('logsData', schema);
 
-module.exports = logs;
+module.exports = logsdb;

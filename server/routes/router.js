@@ -1,10 +1,18 @@
 const express = require("express");
-const services = require("../services/render");
 
-const route = express.Router();
+const route = express.Router(); //fix later
+const services = require("../services/render");
+const controller = require("../controller/controller");
+
+
 
 route.get('/home', services.home);
 route.get('/stats', services.stats)
 route.get('/settings', services.settings);
 
-module.exports = route
+route.post('/api/files', controller.create);
+route.get('/api/files', controller.find);
+route.put('/api/files/:id', controller.edit);
+route.delete('/api/files/:id', controller.delete);
+
+module.exports = route;
