@@ -8,6 +8,6 @@ var schema = new mongoose.Schema({
     time: {type: String, required: true}
 });
 
-const logsdb = mongoose.model('logsData', schema);
+const logsdb = mongoose.model('logsdata', schema);
 
 module.exports = logsdb;
